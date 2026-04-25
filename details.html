@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Room Details</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+}
+
+.room-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">ApnaNest</a>
+  </div>
+</nav>
+
+
+<div class="container mt-5">
+
+  <div class="row">
+
+    
+    <div class="col-md-6">
+      <img src="https://www.parkregisgoa.in/wp-content/uploads/2022/02/Superior-King-2-1-2500x1400.jpg" class="room-img">
+    </div>
+
+
+    <div class="col-md-6">
+
+      <h2>Student Friendly Room</h2>
+
+      <h4 class="text-warning">₹5,000 / month</h4>
+
+      
+      <p>
+        <span data-bs-toggle="tooltip" title="High-speed internet available">📶 WiFi</span> |
+        <span data-bs-toggle="tooltip" title="Comfortable bed & study table">📚 Study Setup</span> |
+        <span data-bs-toggle="tooltip" title="Power backup 24x7">⚡ Electricity</span>
+      </p>
+
+     
+      <p>
+        📍 Location: Near College Area
+      </p>
+
+     
+      <p>
+        Status: <span class="badge bg-success">Available</span>
+      </p>
+
+      
+      <a href="/booking.html"
+        class="btn btn-warning"
+        data-bs-toggle="popover" title="Quick Info" 
+        data-bs-content="Perfect for students & job professionals. Limited rooms available!">
+        Book Now
+    </a>
+
+      
+      <button 
+        class="btn btn-info ms-2" data-bs-toggle="tooltip" title="Call owner: +91 9876543210">
+        Contact
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="container mt-5">
+  <h3>Student Reviews ⭐</h3>
+
+  <div class="card mt-3 bg-success">
+    <div class="card-body text-dark">
+      <p>“Very peaceful place for study. WiFi speed is amazing!”</p>
+      <small>- Rahul (BCA Student)</small>
+    </div>
+  </div>
+
+  <div class="card mt-3">
+    <div class="card-body text-dark">
+      <p>“Affordable and clean room. Good for job professionals.”</p>
+      <small>- Aman (Software Developer)</small>
+    </div>
+  </div>
+
+</div>
+
+<div class="text-center mt-3" id="hover">
+
+<a href="/projectboot.html"  class="btn btn-info" 
+class=" btn btn-info" 
+data-bs-toggle="tooltip" 
+title=" BACK TO HOME " data-bs-placement="right"> <b> Back To Home </b>  
+</a>
+
+
+</div>
+
+<footer class="bg-dark text-white text-center p-3 mt-5">
+  © 2026  ApnaNest  Booking | Designed by Vishal
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+ var tooltipList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  tooltipList.forEach(function(el){
+    new bootstrap.Tooltip(el);
+  });
+
+ 
+  var popoverList = document.querySelectorAll('[data-bs-toggle="popover"]');
+  popoverList.forEach(function(el){
+    new bootstrap.Popover(el);
+  });
+
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ApnaNest </title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+  background: linear-gradient(to right, #005bb6, #00c6ff);
+}
+
+
+.booking-card {
+  border-radius: 15px;
+}
+
+
+.table {
+  background: white;
+  border-radius: 30px;
+  
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+  
+  <h2 class="text-center text-white mb-4">🏨 Smart Room Booking</h2>
+
+  
+  <div class="card booking-card shadow-lg p-4">
+
+    <form>
+
+      
+      <div class="mb-3">
+        <label class="form-label">Full Name</label>
+        <input type="text" class="form-control" placeholder="Enter your name" required>
+      </div>
+
+      
+      <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+
+      
+      <div class="mb-3">
+        <label class="form-label">Select Room Type</label>
+        <select class="form-select" required>
+          <option disabled selected>Choose Room</option>
+          <option>Deluxe Room</option>
+          <option>Standard Room</option>
+          <option>Luxury Room</option>
+        </select>
+      </div>
+
+      
+      <div class="mb-3">
+        <label class="form-label">Payment Method</label>
+        <select class="form-select" required>
+          <option disabled selected>Select Payment</option>
+          <option>Credit Card</option>
+          <option>Debit Card</option>
+          <option>UPI</option>
+        </select>
+      </div>
+
+     
+      <button class="btn btn-info w-100 mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#details">
+        🔍 View Room Details
+      </button>
+
+      <div id="details" class="collapse">
+        <div class="alert alert-light">
+          ✔ AC Room <br>
+          ✔ Free WiFi <br>
+          ✔ Breakfast Included 🍽️
+        </div>
+      </div>
+
+      
+      <button type="button" class="btn btn-success w-100 mt-3" data-bs-toggle="modal" data-bs-target="#modal">
+        🚀 Book Now
+      </button>
+
+    </form>
+
+  </div>
+
+ 
+  <div class="mt-5">
+    <h4 class="text-white">💰 Room Price List</h4>
+    <table class="table table-hover text-center">
+      <tr>
+        <th>Room Type</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Deluxe</td>
+        <td>₹5500</td>
+      </tr>
+      <tr>
+        <td>Standard</td>
+        <td>₹5000</td>
+      </tr>
+      <tr>
+        <td>Luxury</td>
+        <td>₹10000</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+
+<div class="modal fade" id="modal" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center p-3">
+
+
+      <div class="modal-body">
+        <h3 class="text-success">✅ Booking Confirmed!</h3>
+        <p>Your room has been successfully booked.</p>
+
+        <div class="bg-light p-3 rounded">
+          <p class="mb-1"><b>Room:</b> Deluxe</p>
+          <p class="mb-1"><b>Status:</b> Confirmed 🎉</p>
+        </div>
+      </div>
+
+      <div class="modal-footer justify-content-center">
+        <a href="projectboot.html" class="btn btn-primary">🏠 Back to Home</a>
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
